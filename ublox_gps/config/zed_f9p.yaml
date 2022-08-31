@@ -1,5 +1,14 @@
-device: /dev/ttyACM0
+device: $(optenv GPS_DEVICE /dev/ttyACM0)
 frame_id: gps
 uart1:
-  baudrate: 38400
+  baudrate: 115200
 config_on_startup: false
+publish:
+  all: true
+  aid:
+    hui: true
+  nav:
+    posecef: true 
+  esf:
+    meas: true
+
