@@ -57,6 +57,9 @@ _*.pyc
 # JETBRAINS
 *.idea
 
+# VSCode
+*.vscode
+
 # ZEND/ECLIPSE
 *.buildpath
 *.settings
